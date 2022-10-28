@@ -1,6 +1,7 @@
 export interface RecipeInterface {
     title: string,
-    products: Product[]
+    products: Product[],
+    duration: { time: number, measure: TimeMeasure },
 }
 
 export interface Product {
@@ -13,3 +14,4 @@ export interface Product {
 }
 
 export type Sizes = "tablespoon" | "teaspoon" | "cup"
+export type TimeMeasure = "minute" | "minutes" | "seconds" | "hour" | "hours"
