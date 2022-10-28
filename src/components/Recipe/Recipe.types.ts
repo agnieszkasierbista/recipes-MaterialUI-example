@@ -1,3 +1,5 @@
-export interface RecipeProps {
+import {RecipeInterface} from "../../dataModel";
 
+export interface RecipeProps {
+ recipe: RecipeInterface
 }
