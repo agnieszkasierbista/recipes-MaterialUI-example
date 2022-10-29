@@ -1,5 +1,4 @@
 import React, {PropsWithChildren} from 'react';
-import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import {RecipeProps} from './Recipe.types';
 import LetterAvatar from "../Avatar/Avatar.layout";
@@ -7,11 +6,11 @@ import {StyledRecipeImg} from "../Recipes/Recipes.styled";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import {AccessTime, AutoAwesome, AutoFixHigh, AutoFixNormal, Egg, FreeBreakfast, Opacity} from "@mui/icons-material";
-import Rating from "@mui/material/Rating";
+import CustomizedRating from "../CustomizedRating/CustomizedRating.layout";
 
 const Recipe: React.FC<PropsWithChildren<RecipeProps>> = props => {
 
-    const [value, setValue] = React.useState<number | null>(4.5);
+    const [value, setValue] = React.useState<number | null>(3.5);
 
     return (
 
@@ -55,12 +54,8 @@ const Recipe: React.FC<PropsWithChildren<RecipeProps>> = props => {
                         alignItems: 'center',
                     }}
                 >
-                    <Rating
-                        name="half-rating-read"
-                        precision={0.5}
+                    <CustomizedRating
                         value={value}
-                        size="small"
-                        readOnly
                     />
                     <Typography variant="body2" component="p" marginLeft={0.5}>
                         {value}
