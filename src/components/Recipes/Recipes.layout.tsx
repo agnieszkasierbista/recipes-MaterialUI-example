@@ -9,8 +9,8 @@ function Recipes() {
         <Grid container spacing={5}>
             {recipesArray.map((x) => {
                 return (
-                    <Grid item xs={4}>
-                        <Recipe key={x.title} recipe={x}/>
+                    <Grid item xs={4} key={x.title}>
+                        <Recipe recipe={x}/>
                     </Grid>
                 )
             })}
