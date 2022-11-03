@@ -2,8 +2,6 @@ import * as React from 'react';
 import {styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
-import RestaurantOutlinedIcon from '@mui/icons-material/RestaurantOutlined';
-import Typography from '@mui/material/Typography';
 import LocalDiningOutlinedIcon from '@mui/icons-material/LocalDiningOutlined';
 
 const StyledRating = styled(Rating)({

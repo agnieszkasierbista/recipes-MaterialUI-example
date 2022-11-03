@@ -2,286 +2,1228 @@ import {RecipeInterface} from "../dataModel";
 
 export const recipesArray: RecipeInterface[] = [
     {
-        title: 'traditional pancakes',
-        duration: {time: 20, measure: "minutes"},
-        products: [
+        title: 'Bgongbao styled chicken',
+        totalDuration: {time: 30, measure: "minutes"},
+        recipeParts: [
             {
-                name: "eggs",
-                amount: 2,
+                name: "marinade",
+                steps: [{
+                    stepAction: "mix",
+                    stepDuration: {
+                        time: 1,
+                        measure: "minute"
+                    },
+                    products: [
+                        {
+                            name: "salt",
+                            portion: [{
+                                size: 'teaspoon', quantity: 0.5
+                            }]
+                        },
+                        {
+                            name: "light soy sauce",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "potato starch",
+                            portion: [{
+                                size: 'teaspoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "Mirin",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "minced ginger",
+                            portion: [{
+                                size: 'tablespoon', quantity: 1
+                            }]
+                        },
+                        {
+                            name: "minced chilli",
+                            portion: [{
+                                size: 'teaspoon', quantity: 1
+                            }]
+                        }]
+                }],
             },
             {
-                name: "all-purpose flour",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
+                name: "meat",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "chicken breast",
+                            portion: [{
+                                size: 'gram', quantity: 400
+                            }]
+                        }]
+                    },
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            },
+                            {
+                                name: "marinate",
+                                amount: "all"
+                            }]
+                    }
+                ]
             },
             {
-                name: "baking powder",
-                portion: [{
-                    a: 'teaspoon', b: 2
-                }]
+                name: "prep",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "cucumber",
+                            amount: 2
+                        },
+                            {
+                                name: "spring onion",
+                                amount: 3
+                            },
+                            {
+                                name: "garlic",
+                                portion: [{
+                                    size: "clove",
+                                    quantity: 5,
+                                }]
+                            }]
+                    }]
             },
             {
-                name: "salt",
-                portion: [{
-                    a: 'teaspoon', b: 0.25
-                }]
+                name: "sauce",
+                steps: [
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: " Chinkiang vinegar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            },
+                            {
+                                name: "sugar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 1
+                                }]
+                            },
+                            {
+                                name: "Mirin",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }]
+                    }
+                ]
             },
             {
-                name: "sugar",
-                portion: [{
-                    a: 'tablespoon', b: 1
-                }]
-            },
-            {
-                name: "milk",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
-            },
-            {
-                name: "butter",
-                portion: [{
-                    a: 'tablespoon', b: 2
-                }]
-            },
+                name: "stir-fry",
+                steps: [
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 0.5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "oil",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "vegetables",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 2,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "sauce",
+                                amount: "all"
+                            }
+                        ]
+                    }
 
-        ]
+                ]
+            }
+        ],
     },
     {
-        title: 'better pancakes2',
-        duration: {time: 30, measure: "minutes"},
-        products: [
+        title: 'Agongbao styled chicken',
+        totalDuration: {time: 30, measure: "minutes"},
+        recipeParts: [
             {
-                name: "eggs",
-                amount: 2,
+                name: "marinade",
+                steps: [{
+                    stepAction: "mix",
+                    stepDuration: {
+                        time: 1,
+                        measure: "minute"
+                    },
+                    products: [
+                        {
+                            name: "salt",
+                            portion: [{
+                                size: 'teaspoon', quantity: 0.5
+                            }]
+                        },
+                        {
+                            name: "light soy sauce",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "potato starch",
+                            portion: [{
+                                size: 'teaspoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "Mirin",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "minced ginger",
+                            portion: [{
+                                size: 'tablespoon', quantity: 1
+                            }]
+                        },
+                        {
+                            name: "minced chilli",
+                            portion: [{
+                                size: 'teaspoon', quantity: 1
+                            }]
+                        }]
+                }],
             },
             {
-                name: "all-purpose flour",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
+                name: "meat",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "chicken breast",
+                            portion: [{
+                                size: 'gram', quantity: 400
+                            }]
+                        }]
+                    },
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            },
+                            {
+                                name: "marinate",
+                                amount: "all"
+                            }]
+                    }
+                ]
             },
             {
-                name: "baking powder",
-                portion: [{
-                    a: 'teaspoon', b: 2
-                }]
+                name: "prep",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "cucumber",
+                            amount: 2
+                        },
+                            {
+                                name: "spring onion",
+                                amount: 3
+                            },
+                            {
+                                name: "garlic",
+                                portion: [{
+                                    size: "clove",
+                                    quantity: 5,
+                                }]
+                            }]
+                    }]
             },
             {
-                name: "salt",
-                portion: [{
-                    a: 'teaspoon', b: 0.25
-                }]
+                name: "sauce",
+                steps: [
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: " Chinkiang vinegar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            },
+                            {
+                                name: "sugar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 1
+                                }]
+                            },
+                            {
+                                name: "Mirin",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }]
+                    }
+                ]
             },
             {
-                name: "sugar",
-                portion: [{
-                    a: 'tablespoon', b: 1
-                }]
-            },
-            {
-                name: "milk",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
-            },
-            {
-                name: "butter",
-                portion: [{
-                    a: 'tablespoon', b: 2
-                }]
-            },
+                name: "stir-fry",
+                steps: [
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 0.5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "oil",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "vegetables",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 2,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "sauce",
+                                amount: "all"
+                            }
+                        ]
+                    }
 
-        ]
+                ]
+            }
+        ],
     },
     {
-        title: 'decent pancakes3',
-        duration: {time: 25, measure: "minutes"},
-        products: [
+        title: 'Cgongbao styled chicken',
+        totalDuration: {time: 30, measure: "minutes"},
+        recipeParts: [
             {
-                name: "eggs",
-                amount: 2,
+                name: "marinade",
+                steps: [{
+                    stepAction: "mix",
+                    stepDuration: {
+                        time: 1,
+                        measure: "minute"
+                    },
+                    products: [
+                        {
+                            name: "salt",
+                            portion: [{
+                                size: 'teaspoon', quantity: 0.5
+                            }]
+                        },
+                        {
+                            name: "light soy sauce",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "potato starch",
+                            portion: [{
+                                size: 'teaspoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "Mirin",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "minced ginger",
+                            portion: [{
+                                size: 'tablespoon', quantity: 1
+                            }]
+                        },
+                        {
+                            name: "minced chilli",
+                            portion: [{
+                                size: 'teaspoon', quantity: 1
+                            }]
+                        }]
+                }],
             },
             {
-                name: "all-purpose flour",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
+                name: "meat",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "chicken breast",
+                            portion: [{
+                                size: 'gram', quantity: 400
+                            }]
+                        }]
+                    },
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            },
+                            {
+                                name: "marinate",
+                                amount: "all"
+                            }]
+                    }
+                ]
             },
             {
-                name: "baking powder",
-                portion: [{
-                    a: 'teaspoon', b: 2
-                }]
+                name: "prep",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "cucumber",
+                            amount: 2
+                        },
+                            {
+                                name: "spring onion",
+                                amount: 3
+                            },
+                            {
+                                name: "garlic",
+                                portion: [{
+                                    size: "clove",
+                                    quantity: 5,
+                                }]
+                            }]
+                    }]
             },
             {
-                name: "salt",
-                portion: [{
-                    a: 'teaspoon', b: 0.25
-                }]
+                name: "sauce",
+                steps: [
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: " Chinkiang vinegar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            },
+                            {
+                                name: "sugar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 1
+                                }]
+                            },
+                            {
+                                name: "Mirin",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }]
+                    }
+                ]
             },
             {
-                name: "sugar",
-                portion: [{
-                    a: 'tablespoon', b: 1
-                }]
-            },
-            {
-                name: "milk",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
-            },
-            {
-                name: "butter",
-                portion: [{
-                    a: 'tablespoon', b: 2
-                }]
-            },
+                name: "stir-fry",
+                steps: [
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 0.5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "oil",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "vegetables",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 2,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "sauce",
+                                amount: "all"
+                            }
+                        ]
+                    }
 
-        ]
+                ]
+            }
+        ],
     },
     {
-        title: 'kraditional pancakes6',
-        duration: {time: 20, measure: "minutes"},
-        products: [
+        title: 'Dgongbao styled chicken',
+        totalDuration: {time: 30, measure: "minutes"},
+        recipeParts: [
             {
-                name: "eggs",
-                amount: 2,
+                name: "marinade",
+                steps: [{
+                    stepAction: "mix",
+                    stepDuration: {
+                        time: 1,
+                        measure: "minute"
+                    },
+                    products: [
+                        {
+                            name: "salt",
+                            portion: [{
+                                size: 'teaspoon', quantity: 0.5
+                            }]
+                        },
+                        {
+                            name: "light soy sauce",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "potato starch",
+                            portion: [{
+                                size: 'teaspoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "Mirin",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "minced ginger",
+                            portion: [{
+                                size: 'tablespoon', quantity: 1
+                            }]
+                        },
+                        {
+                            name: "minced chilli",
+                            portion: [{
+                                size: 'teaspoon', quantity: 1
+                            }]
+                        }]
+                }],
             },
             {
-                name: "all-purpose flour",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
+                name: "meat",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "chicken breast",
+                            portion: [{
+                                size: 'gram', quantity: 400
+                            }]
+                        }]
+                    },
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            },
+                            {
+                                name: "marinate",
+                                amount: "all"
+                            }]
+                    }
+                ]
             },
             {
-                name: "baking powder",
-                portion: [{
-                    a: 'teaspoon', b: 2
-                }]
+                name: "prep",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "cucumber",
+                            amount: 2
+                        },
+                            {
+                                name: "spring onion",
+                                amount: 3
+                            },
+                            {
+                                name: "garlic",
+                                portion: [{
+                                    size: "clove",
+                                    quantity: 5,
+                                }]
+                            }]
+                    }]
             },
             {
-                name: "salt",
-                portion: [{
-                    a: 'teaspoon', b: 0.25
-                }]
+                name: "sauce",
+                steps: [
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: " Chinkiang vinegar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            },
+                            {
+                                name: "sugar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 1
+                                }]
+                            },
+                            {
+                                name: "Mirin",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }]
+                    }
+                ]
             },
             {
-                name: "sugar",
-                portion: [{
-                    a: 'tablespoon', b: 1
-                }]
-            },
-            {
-                name: "milk",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
-            },
-            {
-                name: "butter",
-                portion: [{
-                    a: 'tablespoon', b: 2
-                }]
-            },
+                name: "stir-fry",
+                steps: [
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 0.5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "oil",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "vegetables",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 2,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "sauce",
+                                amount: "all"
+                            }
+                        ]
+                    }
 
-        ]
+                ]
+            }
+        ],
     },
     {
-        title: 'setter pancakes5',
-        duration: {time: 30, measure: "minutes"},
-        products: [
+        title: 'Ggongbao styled chicken',
+        totalDuration: {time: 30, measure: "minutes"},
+        recipeParts: [
             {
-                name: "eggs",
-                amount: 2,
+                name: "marinade",
+                steps: [{
+                    stepAction: "mix",
+                    stepDuration: {
+                        time: 1,
+                        measure: "minute"
+                    },
+                    products: [
+                        {
+                            name: "salt",
+                            portion: [{
+                                size: 'teaspoon', quantity: 0.5
+                            }]
+                        },
+                        {
+                            name: "light soy sauce",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "potato starch",
+                            portion: [{
+                                size: 'teaspoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "Mirin",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "minced ginger",
+                            portion: [{
+                                size: 'tablespoon', quantity: 1
+                            }]
+                        },
+                        {
+                            name: "minced chilli",
+                            portion: [{
+                                size: 'teaspoon', quantity: 1
+                            }]
+                        }]
+                }],
             },
             {
-                name: "all-purpose flour",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
+                name: "meat",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "chicken breast",
+                            portion: [{
+                                size: 'gram', quantity: 400
+                            }]
+                        }]
+                    },
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            },
+                            {
+                                name: "marinate",
+                                amount: "all"
+                            }]
+                    }
+                ]
             },
             {
-                name: "baking powder",
-                portion: [{
-                    a: 'teaspoon', b: 2
-                }]
+                name: "prep",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "cucumber",
+                            amount: 2
+                        },
+                            {
+                                name: "spring onion",
+                                amount: 3
+                            },
+                            {
+                                name: "garlic",
+                                portion: [{
+                                    size: "clove",
+                                    quantity: 5,
+                                }]
+                            }]
+                    }]
             },
             {
-                name: "salt",
-                portion: [{
-                    a: 'teaspoon', b: 0.25
-                }]
+                name: "sauce",
+                steps: [
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: " Chinkiang vinegar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            },
+                            {
+                                name: "sugar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 1
+                                }]
+                            },
+                            {
+                                name: "Mirin",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }]
+                    }
+                ]
             },
             {
-                name: "sugar",
-                portion: [{
-                    a: 'tablespoon', b: 1
-                }]
-            },
-            {
-                name: "milk",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
-            },
-            {
-                name: "butter",
-                portion: [{
-                    a: 'tablespoon', b: 2
-                }]
-            },
+                name: "stir-fry",
+                steps: [
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 0.5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "oil",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "vegetables",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 2,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "sauce",
+                                amount: "all"
+                            }
+                        ]
+                    }
 
-        ]
+                ]
+            }
+        ],
     },
     {
-        title: 'zecent pancakes4',
-        duration: {time: 25, measure: "minutes"},
-        products: [
+        title: 'Fgongbao styled chicken',
+        totalDuration: {time: 30, measure: "minutes"},
+        recipeParts: [
             {
-                name: "eggs",
-                amount: 2,
+                name: "marinade",
+                steps: [{
+                    stepAction: "mix",
+                    stepDuration: {
+                        time: 1,
+                        measure: "minute"
+                    },
+                    products: [
+                        {
+                            name: "salt",
+                            portion: [{
+                                size: 'teaspoon', quantity: 0.5
+                            }]
+                        },
+                        {
+                            name: "light soy sauce",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "potato starch",
+                            portion: [{
+                                size: 'teaspoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "Mirin",
+                            portion: [{
+                                size: 'tablespoon', quantity: 2
+                            }]
+                        },
+                        {
+                            name: "minced ginger",
+                            portion: [{
+                                size: 'tablespoon', quantity: 1
+                            }]
+                        },
+                        {
+                            name: "minced chilli",
+                            portion: [{
+                                size: 'teaspoon', quantity: 1
+                            }]
+                        }]
+                }],
             },
             {
-                name: "all-purpose flour",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
+                name: "meat",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "chicken breast",
+                            portion: [{
+                                size: 'gram', quantity: 400
+                            }]
+                        }]
+                    },
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            },
+                            {
+                                name: "marinate",
+                                amount: "all"
+                            }]
+                    }
+                ]
             },
             {
-                name: "baking powder",
-                portion: [{
-                    a: 'teaspoon', b: 2
-                }]
+                name: "prep",
+                steps: [
+                    {
+                        stepAction: "chop",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [{
+                            name: "cucumber",
+                            amount: 2
+                        },
+                            {
+                                name: "spring onion",
+                                amount: 3
+                            },
+                            {
+                                name: "garlic",
+                                portion: [{
+                                    size: "clove",
+                                    quantity: 5,
+                                }]
+                            }]
+                    }]
             },
             {
-                name: "salt",
-                portion: [{
-                    a: 'teaspoon', b: 0.25
-                }]
+                name: "sauce",
+                steps: [
+                    {
+                        stepAction: "mix",
+                        stepDuration: {
+                            time: 1,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: " Chinkiang vinegar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            },
+                            {
+                                name: "sugar",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 1
+                                }]
+                            },
+                            {
+                                name: "Mirin",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }]
+                    }
+                ]
             },
             {
-                name: "sugar",
-                portion: [{
-                    a: 'tablespoon', b: 1
-                }]
-            },
-            {
-                name: "milk",
-                portion: [{
-                    a: 'cup', b: 2
-                }]
-            },
-            {
-                name: "butter",
-                portion: [{
-                    a: 'tablespoon', b: 2
-                }]
-            },
+                name: "stir-fry",
+                steps: [
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 0.5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "oil",
+                                portion: [{
+                                    size: 'tablespoon', quantity: 2
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "meat",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "stir-fry",
+                        stepDuration: {
+                            time: 5,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "vegetables",
+                                amount: "all"
+                            }
+                        ]
+                    },
+                    {
+                        stepAction: "add",
+                        stepDuration: {
+                            time: 2,
+                            measure: "minute"
+                        },
+                        products: [
+                            {
+                                name: "sauce",
+                                amount: "all"
+                            }
+                        ]
+                    }
 
-        ]
-    }
+                ]
+            }
+        ],
+    },
 
 ]

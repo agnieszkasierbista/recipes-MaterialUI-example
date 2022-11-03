@@ -32,7 +32,7 @@ const Recipe: React.FC<PropsWithChildren<RecipeProps>> = props => {
                     >
                         <AccessTime sx={{width: 13}}/>
                         <Typography variant="subtitle2" component="p" marginLeft={0.5}>
-                            {props.recipe.duration.time} {props.recipe.duration.measure}
+                            {props.recipe.totalDuration.time} {props.recipe.totalDuration.measure}
                         </Typography>
                     </Box>
                     <Box
