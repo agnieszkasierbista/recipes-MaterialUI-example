@@ -7,10 +7,10 @@ function Recipes() {
 
     return (
         <Grid container spacing={5}>
-            {recipesArray.map((x) => {
+            {recipesArray.map((recipe) => {
                 return (
-                    <Grid item xs={4} key={x.title}>
-                        <Recipe recipe={x}/>
+                    <Grid item xs={4} key={recipe.title}>
+                        <Recipe recipe={recipe}/>
                     </Grid>
                 )
             })}
