@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Container} from "@mui/material";
-import Recipes from './components/Recipes/Recipes.layout';
+import Recipes from './components/Recipes/Recipes';
 import TopBar from './components/TopBar/TopBar.layout';
 import {Route, Routes} from 'react-router-dom';
 import RecipePage from './components/RecipePage/RecipePage.layout';

@@ -6,17 +6,23 @@ import {ThemeProvider} from '@mui/material/styles';
 import theme from "./theme";
 import {GlobalStyle} from './GlobalStyle';
 import {BrowserRouter} from 'react-router-dom';
+import {PersistGate} from 'redux-persist/integration/react';
+import {persistor, store} from './store';
+import {Provider} from 'react-redux';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <BrowserRouter>
-        <ThemeProvider theme={theme}>
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline/>
-            <GlobalStyle/>
-            <App/>
-        </ThemeProvider>
-    </BrowserRouter>
+    <PersistGate loading={null} persistor={persistor}>
+        <Provider store={store}>
+            <BrowserRouter>
+                <ThemeProvider theme={theme}>
+                    <CssBaseline/>
+                    <GlobalStyle/>
+                    <App/>
+                </ThemeProvider>
+            </BrowserRouter>
+        </Provider>
+    </PersistGate>
 );

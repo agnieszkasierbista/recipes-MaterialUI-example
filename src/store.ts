@@ -13,6 +13,7 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const preloadedState = {
+    recipes: {recipes: []}
 };
 
 const epicMiddleware = createEpicMiddleware();
