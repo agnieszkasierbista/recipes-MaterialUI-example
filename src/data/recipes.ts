@@ -204,6 +204,7 @@ export const recipesArray: RecipeInterface[] = [
                 ]
             }
         ],
+        rating: 5
     },
     {
         title: 'Agongbao styled chicken',
@@ -408,6 +409,7 @@ export const recipesArray: RecipeInterface[] = [
                 ]
             }
         ],
+        rating: 3
     },
     {
         title: 'Cgongbao styled chicken',
@@ -612,6 +614,7 @@ export const recipesArray: RecipeInterface[] = [
                 ]
             }
         ],
+        rating: 2.5
     },
     {
         title: 'Dgongbao styled chicken',
@@ -816,6 +819,7 @@ export const recipesArray: RecipeInterface[] = [
                 ]
             }
         ],
+        rating: 3
     },
     {
         title: 'Ggongbao styled chicken',
@@ -1020,6 +1024,7 @@ export const recipesArray: RecipeInterface[] = [
                 ]
             }
         ],
+        rating: 1
     },
     {
         title: 'Fgongbao styled chicken',
@@ -1224,6 +1229,7 @@ export const recipesArray: RecipeInterface[] = [
                 ]
             }
         ],
+        rating: 2.5
     },
 
 ]

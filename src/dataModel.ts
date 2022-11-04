@@ -2,6 +2,7 @@ export interface RecipeInterface {
     title: string,
     recipeParts: RecipePart[]
     totalDuration: Duration,
+    rating: number,
 }
 export interface RecipePart {
     name: RecipePartName,

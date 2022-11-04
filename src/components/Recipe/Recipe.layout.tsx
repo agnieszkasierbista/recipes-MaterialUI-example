@@ -11,10 +11,8 @@ import { Link } from 'react-router-dom';
 
 const Recipe: React.FC<PropsWithChildren<RecipeProps>> = props => {
 
-    const [value, setValue] = React.useState<number | null>(3.5);
-
     return (
-        <Link to={`/recipes/${props.recipe.title}`}>
+        <Link to={`/recipes/${props.recipe.title}`} onClick={() => props.dispatchSetCurrentRecipe(props.recipe)}>
             <Paper elevation={10}>
                 <LetterAvatar name={props.recipe.title}/>
                 <StyledRecipeImg src="./pics/pancake.jpg"
@@ -56,10 +54,10 @@ const Recipe: React.FC<PropsWithChildren<RecipeProps>> = props => {
                         }}
                     >
                         <CustomizedRating
-                            value={value}
+                            value={props.recipe.rating}
                         />
                         <Typography variant="body2" component="p" marginLeft={0.5}>
-                            {value}
+                            {props.recipe.rating}
                         </Typography>
                         <Typography variant="body2" component="p" marginLeft={0.5}>
                             (473 reviews)
