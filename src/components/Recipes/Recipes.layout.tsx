@@ -6,7 +6,9 @@ import {RecipeInterface} from "../../dataModel";
 
 const Recipes: React.FC<PropsWithChildren<RecipesProps>> = (props) => {
 
-    React.useEffect(() => props.dispatchSetRecipes, [])
+    React.useEffect(() => {
+       props.dispatchSetRecipes()
+    }, [])
 
     return (
         <Grid container spacing={5}>

@@ -15,7 +15,7 @@ export const recipesReducer: Reducer = (state = {}, action: AnyAction) => {
         case SET_RECIPES: {
             return {
                 ...state,
-                recipes: recipesArray,
+                recipes: state.recipes.length ? [...state.recipes] : recipesArray,
             };
         }
 
