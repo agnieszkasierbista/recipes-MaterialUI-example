@@ -17,7 +17,7 @@ const RecipePage: React.FC<PropsWithChildren<RecipePageProps>> = (props) => {
     return (
         <>
             <Typography variant="h3" component="h1" marginTop={3}>
-                Title here
+                {props.currentRecipe.title}
             </Typography>
             <Box marginTop={3} sx={{display: "flex"}}>
                 <img src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e" alt="breakfast" height="325"/>
@@ -25,7 +25,7 @@ const RecipePage: React.FC<PropsWithChildren<RecipePageProps>> = (props) => {
             </Box>
             <Box>
                 <Typography variant="h6" component="h4" marginTop={3}>
-                    Title here
+                    Description here
                 </Typography>
                 <Typography variant="body1" component="p" marginTop={3}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at consectetur cum ea
@@ -33,7 +33,7 @@ const RecipePage: React.FC<PropsWithChildren<RecipePageProps>> = (props) => {
                     quod saepe sequi tenetur velit.
                 </Typography>
             </Box>
-            <ControlledAccordions />
+            <ControlledAccordions recipe={props.currentRecipe}/>
             <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
                 <BottomNavigation
                     showLabels
